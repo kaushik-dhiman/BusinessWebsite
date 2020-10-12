@@ -180,7 +180,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   color: #fff;
   transition: 0.3s;
-  font-size: 12px;
+  font-size: 14px;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-weight: 600;
@@ -569,6 +569,7 @@ section {
 .section-bg {
   background: #f7f7f7;
 }
+
 
 /*--------------------------------------------------------------
 # Breadcrumbs
@@ -1042,13 +1043,24 @@ section {
   border-radius: 0 0 3px 3px;
 }
 
-#portfolio .portfolio-item .portfolio-info h4 {
+#portfolio  .portfolio-info h4 {
   font-size: 18px;
   line-height: 1px;
   font-weight: 700;
   margin-bottom: 18px;
   padding-bottom: 0;
 }
+
+#portfolio .portfolio-item  h4 {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #111111;
+  margin-bottom: 18px;
+  padding-bottom: 0;
+}
+
+
 
 #portfolio .portfolio-item .portfolio-info h4 a {
   color: #333;
@@ -1656,3 +1668,23 @@ section {
 }
 
 .text-theme { color: #3143ef; }
+
+.servicesstyle{
+  position: absolute; text-align: center; color: white;
+   width: 90%;
+   font-family: "Montserrat", sans-serif;
+   font-weight: bold;
+   line-height: 1.6;
+      left: 5%;
+      top: 50px;
+      border-radius: 20px;
+      transition: 0.5s;
+      padding-left: 20px;
+      padding-right: 20px;
+      font-size: 60;
+
+}
+.servicesstyle:hover{
+ transform: scale(1.1);
+
+}
