@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 15/10/2020 08:49
+  	Creation date: 13/10/2020 12:47
   	*/
 
 @font-face {
@@ -25,12 +25,9 @@
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
   font-family: Flaticon;
-        font-size: 20px;
+        font-size: 60px;
 font-style: normal;
 margin-left: 20px;
-color: blue;
 }
 
-.flaticon-analysis:before { content: "\f100"; }
-.flaticon-business-report:before { content: "\f101"; }
-.flaticon-tick:before { content: "\f102"; }
+.flaticon-check-mark:before { content: "\f100"; }

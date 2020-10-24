@@ -1,9 +1,4 @@
-/**
-* Template Name: BizPage - v3.1.1
-* Template URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 (function($) {
   "use strict";
 
@@ -15,6 +10,10 @@
       });
     }
   });
+  if ($(window).width() < 764) {
+    $('#vrn').removeClass('top');
+}
+
 
   // Back to top button
   $(window).scroll(function() {
@@ -116,8 +115,21 @@
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
       $('#header').addClass('header-scrolled');
-    } else {
+      $('#header').removeClass('header-scrolled1');
+      $('#subdd').removeClass('subd');
+      $('#subdd').addClass('subd1');
+      $('#subdd1').removeClass('subd');
+      $('#subdd1').addClass('subd1');
+
+    }if ($(this).scrollTop() > 500) {
       $('#header').removeClass('header-scrolled');
+      $('#header').addClass('header-scrolled1');
+      $('#subdd').addClass('subd');
+      $('#subdd').removeClass('subd1');
+      $('#subdd1').addClass('subd');
+      $('#subdd1').removeClass('subd1');
+
+
     }
   });
 
@@ -129,24 +141,7 @@
   var nav_sections = $('section');
   var main_nav = $('.nav-menu, .mobile-nav');
 
-  $(window).on('scroll', function() {
-    var cur_pos = $(this).scrollTop() + 200;
 
-    nav_sections.each(function() {
-      var top = $(this).offset().top,
-        bottom = top + $(this).outerHeight();
-
-      if (cur_pos >= top && cur_pos <= bottom) {
-        if (cur_pos <= bottom) {
-          main_nav.find('li').removeClass('active');
-        }
-        main_nav.find('a[href="#' + $(this).attr('id') + '"]').parent('li').addClass('active');
-      }
-      if (cur_pos < 300) {
-        $(".nav-menu ul:first li:first").addClass('active');
-      }
-    });
-  });
 
   // Intro carousel
   var introCarousel = $(".carousel");

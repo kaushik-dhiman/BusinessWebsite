@@ -2,15 +2,16 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    
+
     <!-- Latest compiled and minified CSS -->
-
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+           <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
 
-    <title></title>
     <style type="text/css">
         .carousel{
-            
+
             perspective: 3350px;
             height: 100%;
         }
@@ -29,23 +30,12 @@
     margin-bottom: 0;
     padding: 0 20px 20px 20px;
         }
-#about{
-    background: url(img/about-bg.jpg) center top no-repeat fixed;
-    background-size: cover;
-    position: relative;
-    margin-top: -30px;
+body{
+    background-color: transparent;
+
 }
 
-#about::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: rgba(255, 255, 255, 0.94);
-    z-index: ;
-}
+
 .section-header p {
     text-align: center;
     padding-bottom: 30px;
@@ -65,6 +55,48 @@
     position: relative;
     padding-bottom: 15px;
 }
+
+.section-header h3 {
+  font-size: 32px;
+  color: #111;
+  font-family: 'Acme', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.section-header h3::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.section-header h3::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #3143ef;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+.section-header p {
+  text-align: center;
+  font-size: 17px;
+  padding-bottom: 30px;
+  color: #333;
+}
+
+
     </style>
   </head>
   <body>
@@ -72,11 +104,11 @@
 
 
 <div id="about">
-     <header class="section-header">
+     <header class="section-header ">
           <h3>About Us</h3>
-            <p><strong>CompanyMate.in</strong> provides taxation & Financial solutions  to individuals, businesses & organizations in India. E-filing  makes easy with CompanyMate.in
-              <br><strong>"We make your business compliance ready at your fingertips"</strong><br> <br>
-              <strong>CompanyMate.in</strong> "Your Business Buddy" is the inevitable source to e-File Income Tax Return, File ITR online, ITR Filing Online, Filing IT Return online
+            <p style="font-family: 'Roboto Slab', serif;"><strong style="font-weight:bold;">CompanyMate</strong> provides taxation & Financial solutions  to individuals, businesses & organizations in India.<br> E-filing  makes easy with CompanyMate
+              <br><strong style="font-weight:bold;">"We make your business compliance ready at your fingertips"</strong><br> <br>
+              <strong style="font-weight:bold;">CompanyMate</strong> "Your Business Buddy" is the inevitable source to e-File Income Tax Return, File ITR online, ITR Filing Online, Filing IT Return online
               & e file income tax, Income Tax Return Filing Online, GST Registration Online, GST Return Filing Online, MSME Registration Online, Pvt Ltd Company Registration Online, Public
               Limited Company Registration Online.</p>
      </header>
@@ -84,14 +116,22 @@
   <div class="carousel" data-indicators="true">
     <div class="" data-aos="fade-up">
 
-   
-    <a class="carousel-item" href="#one!"><div style=" background-color: white; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"><img src="img/about-mission.jpg" width="100%" height="100%"><div class="icon"><i class="ion-ios-list-outline"></i></div><h5>GST Registration</h5><p style="text-align: center;">Every entity whose taxable supply of Goods or Services or both exceeds the threshold limit has to be registered for GSTIN. Thresholds and Eligibility criteria.</p></div></a>
 
-<a class="carousel-item" href="#one!"><div style=" background-color: white; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"><img src="img/about-plan.jpg" width="100%" height="100%"><div class="icon"><i class="ion-ios-list-outline"></i></div><h5>Accounting & Bookkeeping</h5><p style="text-align: center;">Bookkeeping and accounting are both essential business functions required for all businesses. Bookkeeping is responsible for the recording of financial transactions.</p></div></a>
+    <a class="carousel-item" href="#one!"><div style=" background-color: white; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"><img src="img/about-mission.jpg" width="100%" height="100%">
+      <div class="icon"><i class="ion-ios-list-outline"></i></div>
+      <h5 style="color:#3143ef; font-family: 'Acme', sans-serif;">GST Registration</h5><p style="text-align: center; font-family: 'Roboto Slab', serif;" >Every entity whose taxable supply of Goods or Services or both exceeds the threshold limit has to be registered for GSTIN. Thresholds and Eligibility criteria.</p></div></a>
 
-<a class="carousel-item" href="#one!"><div style=" background-color: white; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"><img src="img/about-vision.jpg" width="100%" height="100%"><div class="icon"><i class="ion-ios-list-outline"></i></div><h5>Income Tax Return Filing</h5><p style="text-align: center;">An ITR is a form where taxpayers declare their taxable income,investments, and tax payments are made accordingly.</p></div></a>
+<a class="carousel-item" href="#one!"><div style=" background-color: white; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"><img src="img/about-plan.jpg" width="100%" height="100%">
+  <div class="icon"><i class="ion-ios-list-outline"></i></div>
+  <h5 style="color:#3143ef; font-family: 'Acme', sans-serif;">Accounting & Bookkeeping</h5><p style="text-align: center; font-family: 'Roboto Slab', serif;">Bookkeeping and accounting are both essential business functions required for all businesses. Bookkeeping is responsible for the recording of financial transactions.</p></div></a>
 
-<a class="carousel-item" href="#one!"><div style=" background-color: white; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"><img src="img/about-reg.jpg" width="100%" height="100%"><div class="icon"><i class="ion-ios-list-outline"></i></div><h5>Registration</h5><p style="text-align: center;">Proprietorship Firm
+<a class="carousel-item" href="#one!"><div style=" background-color: white; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"><img src="img/about-vision.jpg" width="100%" height="100%">
+  <div class="icon"><i class="ion-ios-list-outline"></i></div>
+  <h5 style="color:#3143ef; font-family: 'Acme', sans-serif;">Income Tax Return Filing</h5><p style="text-align: center; font-family: 'Roboto Slab', serif;">An ITR is a form where taxpayers declare their taxable income,investments, and tax payments are made accordingly.</p></div></a>
+
+<a class="carousel-item" href="#one!"><div style=" background-color: white; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"><img src="img/about-reg.jpg" width="100%" height="100%">
+  <div class="icon"><i class="ion-ios-list-outline"></i>
+  </div><h5 style="color:#3143ef; font-family: 'Acme', sans-serif;">Registration</h5><p style="text-align: center; font-family: 'Roboto Slab', serif;">Proprietorship Firm
 Partnership Firm
 Private Limited Company
 Public Limited Company
@@ -101,8 +141,8 @@ Limited Liability Partnership</p></div></a>
   </div>
       </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>     
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>     
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script>
       $(document).ready(function(){
     $('.carousel').carousel();

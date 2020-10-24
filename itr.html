@@ -5,25 +5,18 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>CompanyMate | Privacy policy</title>
+  <title>CompanyMate</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!--== theme plugin -->
-  <link href="css/theme-plugin.css" rel="stylesheet" type="text/css" />
-
-  <!--== style -->
-  <link href="css/style.css" rel="stylesheet" type="text/css" />
-
-  <!--== responsive -->
-  <link href="css/responsive.css" rel="stylesheet" type="text/css" />
-
-
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -37,10 +30,11 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-  <link href="assets/css/flaticon.css" rel="stylesheet">
-  <style type="text/css">
-  h2 {
-    
+  <link href="font/flaticon.css" rel="stylesheet">
+
+<style type="text/css">
+  h1,h2 {
+
     font-style: normal;
     line-height: 50px;
     font-weight: 600;
@@ -50,115 +44,149 @@
     position: relative;
 }
 body {
-    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 15px;
     line-height: 1.5;
     color: #5f6368;
     overflow-x: hidden;
-} 
-</style>
+}
+.tab .nav-tabs .nav-link.active, .tab .nav-tabs .nav-link:hover, .tab .nav-tabs.active > a:focus, .tab .nav-tabs > a:hover {
+    background: #3143ef;
+    color: #ffffff;
+}
+.tab .nav-tabs .nav-link {
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    border-radius: .25rem;
+    font-size: 15px;
+    font-weight: 600;
+    color: #081b3a;
+    position: relative;
+    border: 1px solid #eeeff7;
+    padding: 10px 15px;
+}
+.lead {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+}
 
+.featured-item .featured-icon {
+    display: inline-block;
+    margin-bottom: 20px;
+    overflow: hidden;
+    font-size: 60px;
+    line-height: 60px;
+    color: #3143ef;
+}
+.featured-item:hover .featured-icon i {
+    -webkit-animation: toTopFromBottom 0.9s forwards;
+    -moz-animation: toTopFromBottom 0.9s forwards;
+    animation: toTopFromBottom 0.9s forwards;
+    color: #fd5b03;
+}
+</style>
 </head>
 
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top ">
+  <header id="header" class="fixed-top header-transparent header-scrolled">
     <div class="container-fluid">
 
       <div class="row justify-content-center">
-        <div class="col-xl-11 d-flex align-items-center">
-          <h4 class="logo mr-auto" style="color:white" ><a href="index.html"> <strong style="color:blue">C</strong>ompany<strong style="color:blue">M</strong>ate</a></h4>
+        <div class="col-xl-11 d-flex align-items-center mobileNav">
+          <h4 id="brdr" class="logo brdr11 mr-auto" style="color:white" ><a href="index.html"> <strong id="MM1" class="CblueM1">C</strong>ompany<strong id ="MM" class="CblueM1">M</strong>ate</a></h4>
           <!-- Uncomment below if you prefer to use an image logo -->
           <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
           <nav class="nav-menu d-none d-lg-block">
             <ul>
-              <li class="active"><a href="index.html">Home</a></li>
-              <li><a href="index.html#about">About Us</a></li>
-              <li><a href="index.html/GST.html">GST</a></li>
-              <li><a href="#ITR">ITR</a></li>
-              <li><a href="index.html/componyR">Company Registration</a></li>
-              <li><a href="index.html#contact">Contact</a></li>
+              <li><a href="index.html" class="navCu " id="Home">Home</a></li>
+
+              <li class="active drop-down" id="Services"><a href=""
+                 class="navCu active1">Services</a>
+                <ul class="subd1" id="subdd">
+                  <li class="active drop-down"><a href=""
+                     class="navCu">National</a>
+                     <ul class="subd1" id="subdd1">
+                       <li ><a href="gst.html">GST</a></li>
+                       <li><a href="itr.html ">ITR</a></li>
+                       <li><a href="companyR.html">Company Registration</a></li>
+                     </ul>
+                     </li>
+                  <li><a href="" style="pointer-events:none;" >International</a></li>
+                </ul>
+              </li>
+              <li><a href="index.html#about" class="navCu" id="Aboutus">About Us</a></li>
+              <li><a href="index.html#contact" class="navCu" id="Contactus">Contact</a></li>
             </ul>
           </nav><!-- .nav-menu -->
         </div>
       </div>
 
     </div>
-  </header><!-- End Header -->
+  </header>
 
-  <main id="main">
 
-    <!-- ======= Breadcrumbs Section ======= -->
-    <section class="breadcrumbs">
-      <div class="container">
 
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>ITR</h2>
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li>ITR</li>
+
+<section data-aos='fade-right' class="page-title parallaxie breC"  data-bg-img="images/bg/08.jpg">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-12">
+        <h1>ITR</h1>
+        <nav aria-label="breadcrumb" class="page-breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item"><a href="" style="pointer-events:none;">Services</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">ITR</li>
           </ol>
-        </div>
-
+        </nav>
       </div>
-    </section><!-- Breadcrumbs Section -->
+    </div>
+  </div>
+</section>
+<section class="top" id="vrn">
+<div id="carousel-example-generic " >
+<img class='img1' src="https://tomber.biz/wp-content/uploads/revslider/main_slider/slider_2.jpg">
 
-    <!-- ======= Call To Action Section ======= -->
-    <section  id="call-to-action">
-      <div class="container text-center" data-aos="zoom-in">
-        <div class="d-flex justify-content-between align-items-center">
-              <h2 style="color:white;">Welcome to www.companymate.in!</h2>
-              <br><br><br><br><br><br>
-        </div>
-      </div>
-    </section><!-- End Call To Action Section -->
-
-
-    <!-- ======= Portfolio Details Section ======= -->
-   
-      </div>
-    </section><!-- End Portfolio Details Section -->
-
-
-
-  </main><!-- End #main -->
-
-<br><br><br><br>
-
-<section>
+</div>
+</section>
+<br>
+<section data-aos="slide-up" data-aos-delay="300">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 col-md-12">
         <h2 class="title mb-3"> INCOME TAX RETURN</h2>
         <p class="mb-0"> Income Tax Return is the form in which assesse files information about your Income and tax thereon to Income Tax Department. Individuals who fulfil any one of the following conditions should by law file their Income Tax Returns during a financial year. The tax liability of a taxpayer is calculated based on his or her income. In case the tax is paid in excess during a year, then the individual/company will be eligible to receive an Income Tax Refund from the Income Tax Department.</p>
         <img class="img-fluid w-100 rounded box-shadow my-4" src="" alt="">
-        
+
         <h2 class="title mb-3">Income Tax Return Forms</h2>
-    <p class="mb-0">Various Income Tax Returns forms are ITR 1, ITR 2, ITR 3, ITR 4, ITR 5, ITR 6 and ITR 7. When you file a belated return, you are not allowed to carry forward certain losses. 
-<br><br>An Income Tax Return (ITR) is a form used to file information about your income and tax to the Income Tax Department. 
+    <p class="mb-0">Various Income Tax Returns forms are ITR 1, ITR 2, ITR 3, ITR 4, ITR 5, ITR 6 and ITR 7. When you file a belated return, you are not allowed to carry forward certain losses.
+<br><br>An Income Tax Return (ITR) is a form used to file information about your income and tax to the Income Tax Department.
 </p>
-        
+
     <h2 class="title mb-3"><br>WHY US?</h2>
     <p class="mb-0">AT COMPANY MATE, our clients get a hassle free experience with filing their Income Tax Returns.
 <br><br>Our experts assure everything is processed digitally without any requirement of physical Visit.
 <br><br>Whether  You earn Online Or Earn Offline,we got you covered.We assure all our client needs are covered by us.</p>
-<p class"mb-3"><a href="index.html#contact"><strong>Click Here To Get Your ITR Filed</strong></a></p>   
+<p class"mb-3"><a href="index.html#contact"><strong>Click Here To Get Your ITR Filed</strong></a></p>
     <h2 class="title mb-3"><br>Audits</h2>
     <p class="mb-0">Audit means an examination of the Income Tax Return filed by the company for the assessment year and inspecting the information mentioned in the ITR is true or not. A company is liable to perform a tax audit when it becomes liable under the corporate laws in India and cross a certain threshold.
-<br><br>Section 44AB of the Income Tax Act, 1961, lays down the provisions for an income tax audit of businesses in India. An external agency is to be appointed to assess the ITR Return filed by the company for the financial year and submitting the different tax audit forms with the tax authority. 
+<br><br>Section 44AB of the Income Tax Act, 1961, lays down the provisions for an income tax audit of businesses in India. An external agency is to be appointed to assess the ITR Return filed by the company for the financial year and submitting the different tax audit forms with the tax authority.
  </p>
         <h2 class="title mb-3"><br>Purpose of  Tax Audit </h2>
-      
+      <p class="mb-0">A tax audit of a company’s Income Tax Returns must be performed for the following reasons:</p>
     <ul class="list-unstyled list-icon">
-      <li class="mb-2">  A tax audit of a company’s Income Tax Returns must be performed for the following reasons:</li>
-          <li class="mb-2"> &#10149; It is an evaluation of the accuracy of the ITR filed by the company or an individual.</li>
-          <li class="mb-2"> &#10149; It reports the accuracies, errors or irregularities in the tax return filed by a taxpayer.</li>
-          <li class="mb-2"> &#10149; It reports the information relating to the tax depreciation, compliances, etc. as per the tax laws.</li>
-       <li class="mb-2"> &#10149; It reports frauds and malpractices in filing ITR of the taxpayer.</li>
+          <li class="mb-2"> <i class="flaticon-tick"></i> It is an evaluation of the accuracy of the ITR filed by the company or an individual.</li>
+          <li class="mb-2"> <i class="flaticon-tick"></i> It reports the accuracies, errors or irregularities in the tax return filed by a taxpayer.</li>
+          <li class="mb-2"> <i class="flaticon-tick"></i> It reports the information relating to the tax depreciation, compliances, etc. as per the tax laws.</li>
+       <li class="mb-2"> <i class="flaticon-tick"></i> It reports frauds and malpractices in filing ITR of the taxpayer.</li>
         </ul>
     <p class="mb-3" style="color:red">Need Help Regarding tax Audit?
 <br><a href="index.html#contact"><strong>Click here</strong> </a>& Our Experts Will Reach You Within 24 Business Hours.
@@ -174,16 +202,14 @@ body {
 <br><a href="index.html#contact"><strong>Click Here & Fill Up The Form</strong></a>
 Our Team will Contact You Withing 24 Business Hours.
 </p>
-    
-    
-    
+
+
+
     </div>
-      
+
     </div>
   </div>
 </section>
-
-
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
@@ -196,12 +222,12 @@ Our Team will Contact You Withing 24 Business Hours.
             <p>Company Mate provides taxation & Financial solutions to individuals, businesses & organizations in India.</p>
           </div>
 
-          <div class="col-lg-4 col-md-7 footer-links">
+      <div class="col-lg-4 col-md-7 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="ion-ios-arrow-right"></i> <a href="companymate.in/index.html">Home</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="index.html">Home</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="Terms.html">Terms of service</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="PrivacyPolicy.html">Privacy policy</a></li>
             </ul>
           </div>
 
@@ -222,13 +248,10 @@ Our Team will Contact You Withing 24 Business Hours.
         </div>
       </div>
     </div>
-
-    <div class="container">
-      <div class="copyright">
-      <p> &copy; Copyright 2020 <a href='companymate.in/index.html'><strong>CompanyMate.in</strong></a>| All Rights Reserved</p>
+<div style="position:relative; ">
+      <center><p> &copy; Copyright 2020 <a href='index.html'><strong>CompanyMate.in</strong></a>| All Rights Reserved</p></center>
       </div>
 
-    </div>
   </footer><!-- End Footer -->
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>

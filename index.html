@@ -15,8 +15,11 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
 
   <!-- Vendor CSS Files -->
+  <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
   <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -28,35 +31,40 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: BizPage - v3.1.1
-  * Template URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top header-transparent">
+  <header id="header" class="fixed-top header-transparent header-scrolled">
     <div class="container-fluid">
 
       <div class="row justify-content-center">
-        <div class="col-xl-11 d-flex align-items-center">
-          <h4 class="logo mr-auto" style="color:white" ><a href="index.html"> <strong style="color:blue">C</strong>ompany<strong style="color:blue">M</strong>ate</a></h4>
+        <div class="col-xl-11 d-flex align-items-center mobileNav">
+          <h4 id="brdr" class="logo brdr11 mr-auto" style="color:white" ><a href="index.html"> <strong id="MM1" class="CblueM1">C</strong>ompany<strong id ="MM" class="CblueM1">M</strong>ate</a></h4>
           <!-- Uncomment below if you prefer to use an image logo -->
           <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
           <nav class="nav-menu d-none d-lg-block">
             <ul>
-              <li class="active"><a href="index.html">Home</a></li>
-              <li><a href="#about">About Us</a></li>
-              <li><a href="gst.html">GST</a></li>
-              <li><a href="itr.html">ITR</a></li>
-              <li><a href="#componyR">Company Registration</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="index.html" class="navCu active1" id="Home">Home</a></li>
+
+              <li class="active drop-down" id="Services"><a href=""
+                 class="navCu">Services</a>
+                <ul class="subd1" id="subdd">
+                  <li class="active drop-down"><a href=""
+                     class="navCu">National</a>
+                     <ul class="subd1" id="subdd1">
+                       <li ><a href="gst.html">GST</a></li>
+                       <li><a href="itr.html">ITR</a></li>
+                       <li><a href="companyR.html">Company Registration</a></li>
+                     </ul>
+                     </li>
+                  <li><a href="" style="pointer-events:none;" >International</a></li>
+                </ul>
+              </li>
+              <li><a href="index.html#about" class="navCu" id="Aboutus">About Us</a></li>
+              <li><a href="index.html#contact" class="navCu" id="Contactus">Contact</a></li>
             </ul>
           </nav><!-- .nav-menu -->
         </div>
@@ -64,7 +72,6 @@
 
     </div>
   </header><!-- End Header -->
-
   <!-- ======= Intro Section ======= -->
   <section id="intro">
     <div class="intro-container">
@@ -77,8 +84,8 @@
           <div class="carousel-item active" style="background-image: url(assets/img/intro-carousel/1.jpg)">
             <div class="carousel-container">
               <div class="container">
-                <h2 class="animate__animated animate__fadeInDown">We Provide Complete <span class="text-theme">Business Compliance </span> Solution</h2>
-                <p class="animate__animated animate__fadeInUp">Start working with a company that provides everything you need to start your own business.</p>
+                <h2 class="animate__animated animate__fadeInDown" style="font-family: 'Acme', sans-serif;">We Provide <span class="text-theme">Business Compliance </span></br> Solution</h2>
+                <p class="animate__animated animate__fadeInUp" style="font-family: 'Roboto Slab', serif;">Start working with a company that provides everything you need to start your own business.</p>
                 <a href="#aboutC" class="btn-get-started scrollto animate__animated animate__fadeInUp">Get Started</a>
               </div>
             </div>
@@ -87,8 +94,8 @@
           <div class="carousel-item" style="background-image: url(assets/img/intro-carousel/2.jpg)">
             <div class="carousel-container">
               <div class="container">
-              <h2 class="animate__animated animate__fadeInDown">We Provide Complete <span class="text-theme">Business Compliance </span> Solution</h2>
-                <p class="animate__animated animate__fadeInUp">Start working with a company that provides everything you need to start your own business.</p>
+              <h2 class="animate__animated animate__fadeInDown" style="font-family: 'Acme', sans-serif;">We Provide <span class="text-theme">Business Compliance </span></br> Solution</h2>
+                <p class="animate__animated animate__fadeInUp" style="font-family: 'Roboto Slab', serif;">Start working with a company that provides everything you need to start your own business.</p>
                 <a href="#aboutC" class="btn-get-started scrollto animate__animated animate__fadeInUp">Get Started</a>
               </div>
             </div>
@@ -97,8 +104,8 @@
           <div class="carousel-item" style="background-image: url(assets/img/intro-carousel/3.jpg)">
             <div class="carousel-container">
               <div class="container">
-                <h2 class="animate__animated animate__fadeInDown">We Provide Complete <span class="text-theme">Business Compliance </span> Solution</h2>
-                <p class="animate__animated animate__fadeInUp">Start working with a company that provides everything you need to start your own business.</p>
+                <h2 class="animate__animated animate__fadeInDown" style="font-family: 'Acme', sans-serif;">We Provide  <span class="text-theme">Business Compliance </span><br> Solution</h2>
+                <p class="animate__animated animate__fadeInUp" style="font-family: 'Roboto Slab', serif;">Start working with a company that provides everything you need to start your own business.</p>
                 <a href="#aboutC" class="btn-get-started scrollto animate__animated animate__fadeInUp">Get Started</a>
               </div>
             </div>
@@ -123,11 +130,43 @@
   <main id="main">
 
     <!-- ======= About Us Section ======= -->
-    <div id="aboutC">
+    <div data-aos="slide-down" id="aboutC">
     <section id="about">
       <div class="container" data-aos="fade-up">
 <iframe src="about.html" scrolling="no" style="position: relative; border-radius: 20px; " height="800px" width="100%" frameborder="0"></iframe>
+</div>
+</section>
+</div>
 
+
+    <!-- ======= Services Section ======= -->
+        <section id="services" >
+      <div class="container" data-aos="fade-up">
+        <header class="section-header wow fadeInUp">
+          <h3 >Why <span style="color:blue">CompanyMate</span> ?</h3>
+
+              <!-- ======= Rviews Section ======= -->
+          <div class="reviews-area">
+            <div class="row no-gutters">
+              <div class="col-lg-6 py-0">
+                <img src="assets/img/0.55.jpg" alt="" class="img-fluid">
+              </div>
+
+              <div class="col-lg-6 col-12 md-mt-5 ml-auto">
+          <div class="card-body" style="color:#333; font-size:18px;"><br><strong>CompanyMate</strong> provides taxation & Financial solutions  to individuals, businesses & organizations in India.
+        </div>
+        <div class="card-body"><strong  style="color:#333; font-size:18px;">"Our Business Model Revolves Around Theory, Quality & Quantity"</strong>
+        </div>
+          <div class="card-body" style="color:#333; font-size:18px;"><strong>CompanyMate</strong> provide different solution to our clients, basis on their requirement.
+          </div>
+        </header>
+      </div>
+
+            </div>
+          </div><!-- End Rviews Section -->
+
+      </div>
+    </section><!-- End Services Section -->
     <!-- ======= Skills Section ======= -->
     <section id="skills">
       <div class="container" data-aos="fade-up">
@@ -169,42 +208,13 @@
       </div>
     </section><!-- End Skills Section -->
 
-    <!-- ======= Services Section ======= -->
-        <section id="services" >
-      <div class="container" data-aos="fade-up">
-        <header class="section-header wow fadeInUp">
-          <h3>Why <span style="color:blue">CompanyMate</span> ?</h3>
-              <!-- ======= Rviews Section ======= -->
-          <div class="reviews-area">
-            <div class="row no-gutters">
-              <div class="col-lg-6 py-0">
-                <img src="assets/img/0.55.jpg" alt="" class="img-fluid">
-              </div>
-
-              <div class="col-lg-6 col-12 md-mt-5 ml-auto">
-          <div class="card-body"><strong>CompanyMate.in</strong> provides taxation & Financial solutions  to individuals, businesses & organizations in India.
-        </div>
-        <div class="card-body"><strong>"Our Business Model Revolves Around Theory, Quality & Quantity"</strong>
-        </div>
-          <div class="card-body"><strong>CompanyMate.in</strong> provide different solution to our clients, basis on their requirement.
-          </div>
-        </header>
-      </div>
-
-
-            </div>
-          </div><!-- End Rviews Section -->
-
-      </div>
-    </section><!-- End Services Section -->
-
 
 
     <!-- ======= Call To Action Section ======= -->
-    <section id="call-to-action">
+    <section id="call-to-actionn">
       <div class="container text-center" data-aos="zoom-in">
       <h3>"Starting & Managing Your Business <br>Now At Your FingerTips"</h3>
-      <p><strong>CompanyMate.in</strong> "Your Business Buddy" is the inevitable source to e-File Returns.</p>
+      <p><strong>CompanyMate</strong> "Your Business Buddy" is the inevitable source to e-File Returns.</p>
 		  <p>Managing all your business compliance has never been so easy <br><strong>"You Do What You are Best At BUSINESS"</strong></p>
         <a class="cta-btn" href="#">Start</a>
       </div>
@@ -212,7 +222,7 @@
 
 
     <!-- ======= Facts Section ======= -->
-    <section id="facts">
+    <section  data-aos="zoom-in" id="facts">
       <div class="container" data-aos="fade-up">
 
         <header class="section-header">
@@ -257,7 +267,7 @@
         <header class="section-header">
           <h3 class="section-title">Our Services</h3>
         </header>
-      <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+      <div class="row portfolio-container" data-aos="flip-up" data-aos-delay="250" >
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-app" style="position: relative;">
           <div class="portfolio-wrap">
@@ -273,8 +283,8 @@
 
               Limited Liability Partnership</p>
             </figure>
-            <div class="portfolio-info">
-              <h4>Starting a Business</h4>
+            <div class="portfolio-info blueish" style="background-color: rgba(49,51,239, 0.97);">
+              <h4  style="color:white;">Starting a Business</h4>
             </div>
           </div>
         </div>
@@ -308,8 +318,8 @@ Patent<br>
 CopyRight<br><br></p>
             </figure>
 
-            <div class="portfolio-info">
-              <h4>Intellectual Properties</h4>
+            <div class="portfolio-info blueish" style="background-color: rgba(49,51,239, 0.97);">
+              <h4  style="color:white;">Intellectual Properties</h4>
 
             </div>
           </div>
@@ -339,8 +349,8 @@ Bookkeeping<br><br><br></p>
               <p class="servicesstyle"><br><br>Click here to apply for job, If any<br><br><br></p>
             </figure>
 
-            <div class="portfolio-info">
-              <a onclick="alert('Currently we are not hiring!');return false;"><h4>Career</h4></a>
+            <div class="portfolio-info" style="background-color: rgba(49,51,239, 0.97);">
+              <a onclick="alert('Currently we are not hiring!');return false;"><h4 style="color:white;">Career</h4></a>
             </div>
           </div>
         </div>
@@ -363,7 +373,7 @@ Bookkeeping<br><br><br></p>
     </section><!-- End Portfolio Section -->
 
     <!-- ======= Contact Section ======= -->
-    <section id="contact" class="section-bg">
+    <section data-aos='fade-right' id="contact" class="section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
@@ -462,9 +472,9 @@ Bookkeeping<br><br><br></p>
           <div class="col-lg-4 col-md-7 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="ion-ios-arrow-right"></i> <a href="companymate.in/index.html">Home</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="terms_of_services.html">Terms of service</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="Privacy_policy.html">Privacy policy</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="index.html">Home</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="Terms.html">Terms of service</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="PrivacyPolicy.html">Privacy policy</a></li>
             </ul>
           </div>
 
@@ -485,13 +495,10 @@ Bookkeeping<br><br><br></p>
         </div>
       </div>
     </div>
-
-    <div class="container">
-      <div class="copyright">
-      <p> &copy; Copyright 2020 <a href='companymate.in/index.html'><strong>CompanyMate.in</strong></a>| All Rights Reserved</p>
+<div style="position:relative; ">
+      <center><p> &copy; Copyright 2020 <a href='index.html'><strong>CompanyMate.in</strong></a>| All Rights Reserved</p></center>
       </div>
 
-    </div>
   </footer><!-- End Footer -->
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>

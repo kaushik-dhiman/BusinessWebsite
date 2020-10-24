@@ -1,17 +1,24 @@
-/**
-* Template Name: BizPage - v3.1.1
-* Template URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+body::-webkit-scrollbar {
+  width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(13,9,44, 0.9);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color:#3143ef ;
+  outline: 1px solid slategrey;
+}
+
 body {
   background: #fff;
   color: #666666;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Roboto Slab', serif;
 }
 
 a {
@@ -26,14 +33,15 @@ a:hover, a:active, a:focus {
 }
 
 p {
-  padding: 0;
-  margin: 0 0 30px 0;
+  padding: 10px;
+  margin: 10px 0 0 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Montserrat", sans-serif;
+font-family: 'Acme', sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
+  letter-spacing: 1.5px;
   padding: 0;
 }
 
@@ -116,7 +124,7 @@ h1, h2, h3, h4, h5, h6 {
 #header {
   transition: all 0.5s;
   z-index: 997;
-  padding: 26px 0;
+
   background: rgba(0, 0, 0, 0.9);
 }
 
@@ -125,22 +133,49 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header.header-scrolled {
-  background: rgba(0, 0, 0, 0.9);
-  padding: 18px 0;
-}
+    background: rgba(13,9,44, 0.9);
 
+}
+#header.header-scrolled1 {
+    background: rgba(49,67,239, 0.9);
+}
 #header .logo {
   font-size: 25px;
   margin: 0;
   padding: 0;
   line-height: 1;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Acme', sans-serif;
   font-weight: 700;
-  letter-spacing: 3px;
+  letter-spacing: 1.5px;
   padding-left: 10px;
-  border-left: 4px solid #3143ef;
-}
 
+}
+.activated{
+  color: orange;
+  display: block;
+    position: relative;
+    transition: 0.3s;
+    font-size: 14px;
+  font-family: 'Acme', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+}
+.brdr11{
+border-left: 4px solid orange;
+}
+.navC{
+  color: orange;
+}
+.CblueM1{
+color: orange;
+}
+.CblueM2{
+color: orange;
+}
+.brdr1{
+border-left: 4px solid orange;
+}
 #header .logo a {
   color: #fff;
 }
@@ -172,22 +207,56 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu > ul > li {
   position: relative;
   white-space: nowrap;
-  padding: 10px 0 10px 28px;
+  padding: 0px 0 0px 15px;
 }
-
+.navCu{
+  border: transparent;
+    padding: 13px;
+}
 .nav-menu a {
   display: block;
   position: relative;
   color: #fff;
+  letter-spacing: 1.5px;
   transition: 0.3s;
   font-size: 14px;
-  font-family: "Montserrat", sans-serif;
+font-family: 'Acme', sans-serif;
   text-transform: uppercase;
   font-weight: 600;
 }
 
-.nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-  color: #3143ef;
+.nav-menu a:hover, .nav-menu li:hover > a {
+  color: orange;
+  border-bottom: 4px solid orange;
+  border-top: 4px solid orange;
+}
+.active1{
+  border-bottom: 3px solid orange;
+  border-top: 3px solid orange;
+}
+
+@media only screen and (max-width: 995px) {
+
+.mobileNav{
+padding:15px;
+}
+h1{
+  font-size: 30px;
+}
+h2{
+  font-size: 25px;
+}
+
+}
+@media only screen and (max-width: 800px) {
+.breC{
+ position:absolute; z-index: 0;
+ margin-top: 0%;
+}
+}
+.breC{
+ position:absolute; z-index: 1;
+ margin-top: 15%; margin-left: 15%;
 }
 
 .nav-menu .drop-down ul {
@@ -199,7 +268,6 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0;
   visibility: hidden;
   padding: 10px 0;
-  background: #fff;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
 }
@@ -219,11 +287,11 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 20px;
   font-size: 13px;
   text-transform: none;
-  color: #333333;
+  color: white;
 }
 
 .nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
-  color: #3143ef;
+  color: white;
 }
 
 .nav-menu .drop-down > a:after {
@@ -406,7 +474,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #intro .carousel-item::before {
   content: '';
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 #intro .carousel-container {
@@ -427,7 +495,7 @@ h1, h2, h3, h4, h5, h6 {
 #intro h2 {
   color: #fff;
   margin-bottom: 30px;
-  font-size: 48px;
+  font-size: 60px;
   font-weight: 700;
 }
 
@@ -467,7 +535,7 @@ h1, h2, h3, h4, h5, h6 {
 #intro .carousel-fade .carousel-inner .carousel-item-next.carousel-item-left,
 #intro .carousel-fade .carousel-inner .carousel-item-prev.carousel-item-right {
   opacity: 1;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 
 #intro .carousel-fade .carousel-inner .carousel-item-next,
@@ -499,10 +567,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #intro .btn-get-started {
-  font-family: "Montserrat", sans-serif;
+font-family: 'Acme', sans-serif;
   font-weight: 500;
   font-size: 16px;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   display: inline-block;
   padding: 8px 32px;
   border-radius: 50px;
@@ -517,6 +585,13 @@ h1, h2, h3, h4, h5, h6 {
   color: #3143ef;
 }
 
+.subd{
+  background: #3143ef;
+}
+.subd1{
+    background:  rgba(13,9,44, 0.9);
+}
+
 /*--------------------------------------------------------------
 # Sections
 --------------------------------------------------------------*/
@@ -529,9 +604,11 @@ section {
 .section-header h3 {
   font-size: 32px;
   color: #111;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
   text-align: center;
   font-weight: 700;
+  font-family: 'Acme', sans-serif;
   position: relative;
   padding-bottom: 15px;
 }
@@ -807,6 +884,47 @@ section {
   margin-bottom: 0;
 }
 
+/* Call To Action Section for Home
+--------------------------------*/
+#call-to-actionn {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 50, 0.6)), url(../img/aa.jpg) fixed center center;
+  background-size: cover;
+  padding: 60px 0;
+}
+
+#call-to-actionn h3 {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+#call-to-actionn p {
+  color: #fff;
+}
+
+#call-to-actionn .cta-btn {
+  font-family: 'Acme', sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 25px;
+  transition: 0.5s;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#call-to-actionn .cta-btn:hover {
+  background: #3143ef;
+  border: 2px solid #3143ef;
+}
+
+/* Call To Action Section
+--------------------------------*/
+
 /* Call To Action Section
 --------------------------------*/
 #call-to-action {
@@ -826,11 +944,11 @@ section {
 }
 
 #call-to-action .cta-btn {
-  font-family: "Montserrat", sans-serif;
+font-family: 'Acme', sans-serif;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 16px;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
   display: inline-block;
   padding: 8px 28px;
   border-radius: 25px;
@@ -857,8 +975,9 @@ section {
 }
 
 #skills .progress .skill {
-  font-family: "Open Sans", sans-serif;
+font-family: 'Acme', sans-serif;
   line-height: 35px;
+  letter-spacing: 1.5px;letter-spacing: 1.5px;
   padding: 0;
   margin: 0 0 0 20px;
   text-transform: uppercase;
@@ -902,18 +1021,20 @@ section {
 }
 
 #facts .counters span {
-  font-family: "Montserrat", sans-serif;
+font-family: 'Acme', sans-serif;
   font-weight: bold;
   font-size: 48px;
   display: block;
+  letter-spacing: 1.5px;
   color: #3143ef;
 }
 
 #facts .counters p {
   padding: 0;
   margin: 0 0 20px 0;
-  font-family: "Montserrat", sans-serif;
+font-family: 'Acme', sans-serif;
   font-size: 14px;
+  letter-spacing: 1.5px;
   color: #111;
 }
 
@@ -1511,7 +1632,7 @@ section {
 --------------------------------------------------------------*/
 #footer {
   background: #000;
-  padding: 0 0 30px 0;
+  padding: 0 0 0px 0;
   color: #eee;
   font-size: 14px;
 }
@@ -1530,7 +1651,7 @@ section {
   margin: 0 0 20px 0;
   padding: 2px 0 2px 10px;
   line-height: 1;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Roboto Slab', serif;
   font-weight: 700;
   letter-spacing: 3px;
   border-left: 4px solid #3143ef;
@@ -1540,7 +1661,7 @@ section {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Roboto Slab', serif;
   color: #eee;
 }
 
@@ -1658,7 +1779,7 @@ section {
 
 #footer .copyright {
   text-align: center;
-  padding-top: 30px;
+  padding-top: 10px;
 }
 
 #footer .credits {
@@ -1670,13 +1791,14 @@ section {
 .text-theme { color: #3143ef; }
 
 .servicesstyle{
-  position: absolute; text-align: center; color: white;
+  position: absolute;
+  text-align: center;
+   color: white;
    width: 90%;
-   font-family: "Montserrat", sans-serif;
-   font-weight: bold;
+  font-family: 'Roboto Slab', serif;
    line-height: 1.6;
       left: 5%;
-      top: 50px;
+      top: 45px;
       border-radius: 20px;
       transition: 0.5s;
       padding-left: 20px;
@@ -1687,4 +1809,22 @@ section {
 .servicesstyle:hover{
  transform: scale(1.1);
 
+}
+
+
+.top{
+  position: relative;
+  height: 80vh;
+  width: 100%;
+}
+
+#carousel-example-generic {
+  overflow: hidden;
+  position: relative;
+}
+
+.img1 {
+    vertical-align: middle;
+    border-style: none;
+    width: 100%;
 }

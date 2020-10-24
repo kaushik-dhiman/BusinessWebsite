@@ -5,25 +5,18 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>CompanyMate | Privacy policy</title>
+  <title>CompanyMate</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!--== theme plugin -->
-  <link href="css/theme-plugin.css" rel="stylesheet" type="text/css" />
-
-  <!--== style -->
-  <link href="css/style.css" rel="stylesheet" type="text/css" />
-
-  <!--== responsive -->
-  <link href="css/responsive.css" rel="stylesheet" type="text/css" />
-
-
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -34,12 +27,14 @@
   <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
   <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-  <link href="assets/css/flaticon.css" rel="stylesheet">
+  <link href="font/flaticon1.css" rel="stylesheet">
+
   <style type="text/css">
-  h2 {
+    h1,h2 {
 
     font-style: normal;
     line-height: 50px;
@@ -50,7 +45,6 @@
     position: relative;
 }
 body {
-    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 15px;
@@ -77,7 +71,9 @@ body {
 .lead {
     font-weight: normal;
     font-size: 16px;
+    position: relative;
     line-height: 30px;
+    top: 10px;
 }
 
 .featured-item .featured-icon {
@@ -87,6 +83,7 @@ body {
     font-size: 60px;
     line-height: 60px;
     color: #3143ef;
+    font-size: 40px;
 }
 .featured-item:hover .featured-icon i {
     -webkit-animation: toTopFromBottom 0.9s forwards;
@@ -94,82 +91,82 @@ body {
     animation: toTopFromBottom 0.9s forwards;
     color: #fd5b03;
 }
-</style>
 
+  </style>
+}
 </head>
 
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top ">
+  <header id="header" class="fixed-top header-transparent header-scrolled">
     <div class="container-fluid">
 
       <div class="row justify-content-center">
-        <div class="col-xl-11 d-flex align-items-center">
-          <h4 class="logo mr-auto" style="color:white" ><a href="index.html"> <strong style="color:blue">C</strong>ompany<strong style="color:blue">M</strong>ate</a></h4>
+        <div class="col-xl-11 d-flex align-items-center mobileNav">
+          <h4 id="brdr" class="logo brdr11 mr-auto" style="color:white" ><a href="index.html"> <strong id="MM1" class="CblueM1">C</strong>ompany<strong id ="MM" class="CblueM1">M</strong>ate</a></h4>
           <!-- Uncomment below if you prefer to use an image logo -->
           <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
           <nav class="nav-menu d-none d-lg-block">
             <ul>
-              <li class="active"><a href="index.html">Home</a></li>
-              <li><a href="index.html#about">About Us</a></li>
-              <li><a href="gst.html">GST</a></li>
-              <li><a href="itr.html">ITR</a></li>
-              <li><a href="#componyR">Company Registration</a></li>
-              <li><a href="index.html#contact">Contact</a></li>
+              <li><a href="index.html" class="navCu" id="Home">Home</a></li>
+
+              <li class="active drop-down" id="Services"><a href=""
+                 class="navCu active1">Services</a>
+                <ul class="subd1" id="subdd">
+                  <li class="active drop-down"><a href=""
+                     class="navCu">National</a>
+                     <ul class="subd1" id="subdd1">
+                       <li ><a href="gst.html">GST</a></li>
+                       <li><a href="itr.html">ITR</a></li>
+                       <li><a href="companyR.html">Company Registration</a></li>
+                     </ul>
+                     </li>
+                  <li><a href="" style="pointer-events:none;" >International</a></li>
+                </ul>
+              </li>
+              <li><a href="index.html#about" class="navCu" id="Aboutus">About Us</a></li>
+              <li><a href="index.html#contact" class="navCu" id="Contactus">Contact</a></li>
             </ul>
           </nav><!-- .nav-menu -->
         </div>
       </div>
 
     </div>
-  </header><!-- End Header -->
+  </header>
 
-  <main id="main">
+<section data-aos='fade-right' class="page-title parallaxie breC"  data-bg-img="images/bg/08.jpg">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-12">
+        <h1>GST</h1>
+        <nav aria-label="breadcrumb" class="page-breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item"><a href="" style="pointer-events:none;">Services</a>
+            </li>
 
-    <!-- ======= Breadcrumbs Section ======= -->
-    <section class="breadcrumbs">
-      <div class="container">
-
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>ITR</h2>
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li>ITR</li>
+            <li class="breadcrumb-item active" aria-current="page">GST</li>
           </ol>
-        </div>
-
+        </nav>
       </div>
-    </section><!-- Breadcrumbs Section -->
+    </div>
+  </div>
+</section>
+<section class="top" id="vrn">
+<div id="carousel-example-generic " >
+<img class='img1' src="https://tomber.biz/wp-content/uploads/revslider/main_slider/slider_2.jpg">
 
-    <!-- ======= Call To Action Section ======= -->
-    <section  id="call-to-action">
-      <div class="container text-center" data-aos="zoom-in">
-        <div class="d-flex justify-content-between align-items-center">
-              <h2 style="color:white;">Welcome to www.companymate.in!</h2>
-              <br><br><br><br><br><br>
-        </div>
-      </div>
-    </section><!-- End Call To Action Section -->
+</div>
+</section>
 
-
-    <!-- ======= Portfolio Details Section ======= -->
-
-      </div>
-    </section><!-- End Portfolio Details Section -->
-
-
-
-  </main><!-- End #main -->
-
-<br><br><br><br>
-
-<section>
+<br>
+<section data-aos="slide-up" >
   <div class="container">
     <div class="row">
       <div class="col-lg-12 col-md-12">
-
         <h2 class="title mb-3">Goods & Services Tax (GST)</h2>
         <p class="mb-0">Goods and Services Tax (GST) is an indirect tax (or consumption tax) used in India on the supply of goods and services. It is a comprehensive, multistage, destination-based tax: comprehensive because it has subsumed almost all the indirect taxes except a few state taxes. Multi-staged as it is, the GST is imposed at every step in the production process, but is meant to be refunded to all parties in the various stages of production other than the final consumer and as a destination-based tax, it is collected from point of consumption and not point of origin like previous taxes.
   <br><br>Goods and services are divided into five different tax slabs for collection of tax - 0%, 5%, 12%, 18% and 28%.
@@ -177,8 +174,8 @@ body {
         <img class="img-fluid w-100 rounded box-shadow my-4" src="" alt="">
         <div class="row mt-5">
           <div class="col-sm-6 xs-mt-5">
-            <div class="featured-item text-center">
-              <div class="featured-icon"> <i class="flaticon-report"></i>
+            <div class="featured-item text-center" style="animation-name: rot">
+              <div class="featured-icon"> <i class="flaticon-analysis"></i>
               </div>
               <div class="featured-title">
                 <h5>Taxes And Efficiency</h5>
@@ -190,7 +187,7 @@ body {
           </div>
           <div class="col-sm-6 md-mt-5">
             <div class="featured-item text-center">
-              <div class="featured-icon"> <i class="flaticon-testing"></i>
+              <div class="featured-icon"> <i class="flaticon-business-report"></i>
               </div>
               <div class="featured-title">
                 <h5>Financial And Analysis</h5>
@@ -229,7 +226,6 @@ body {
             </div>
           </nav>
           <!-- Tab panes -->
-          <br>
           <div class="tab-content" id="nav-tabContent">
             <div role="tabpanel" class="tab-pane fade show active" id="tab1-1">
               <p class="lead">Return for Outward Supplies</p>
@@ -297,7 +293,9 @@ body {
     </div>
   </div>
 </section>
-<br><br><br>
+<br><br>
+
+
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
@@ -310,12 +308,12 @@ body {
             <p>Company Mate provides taxation & Financial solutions to individuals, businesses & organizations in India.</p>
           </div>
 
-          <div class="col-lg-4 col-md-7 footer-links">
+         <div class="col-lg-4 col-md-7 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="ion-ios-arrow-right"></i> <a href="companymate.in/index.html">Home</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="index.html">Home</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="Terms.html">Terms of service</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="PrivacyPolicy.html">Privacy policy</a></li>
             </ul>
           </div>
 
@@ -336,13 +334,10 @@ body {
         </div>
       </div>
     </div>
-
-    <div class="container">
-      <div class="copyright">
-      <p> &copy; Copyright 2020 <a href='companymate.in/index.html'><strong>CompanyMate.in</strong></a>| All Rights Reserved</p>
+<div style="position:relative; ">
+      <center><p> &copy; Copyright 2020 <a href='index.html'><strong>CompanyMate.in</strong></a>| All Rights Reserved</p></center>
       </div>
 
-    </div>
   </footer><!-- End Footer -->
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>

@@ -1,6 +1,6 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 13/10/2020 12:47
+    Creation date: 15/10/2020 08:49
     */
 
     @font-face {
@@ -37,6 +37,10 @@
   font-smoothing: antialiased;
     }
 
-    .flaticon-check-mark:before { content: "\f100"; }
+    .flaticon-analysis:before { content: "\f100"; }
+.flaticon-business-report:before { content: "\f101"; }
+.flaticon-tick:before { content: "\f102"; }
     
-    $font-Flaticon-check-mark: "\f100";
+    $font-Flaticon-analysis: "\f100";
+    $font-Flaticon-business-report: "\f101";
+    $font-Flaticon-tick: "\f102";
